@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mental Health Assessment | AsDevAd</title>
+    <title>Mental Health Assessment | AI-Companion</title>
     <meta name="description" content="Mental health assessment quiz" />
      <meta name="author" content="AsDevAd" />
     <link rel="stylesheet" href="landingpage.css" />
@@ -20,7 +20,7 @@
       
       <header>
         <div class="logo">
-          <span class="logo-text">AsDevAd</span>
+          <span class="logo-text">AI-Companion</span>
         </div>
         <nav>
           <ul>
@@ -621,7 +621,7 @@
 
       <footer>
         <div class="footer-content">
-          <p>&copy; 2025 AsDevAd. All rights reserved.</p>
+          <p>&copy; 2025 AI-Companion. All rights reserved.</p>
           <div class="footer-links">
             <a href="#">Privacy Policy</a>
             <a href="#">Terms of Service</a>
@@ -650,7 +650,7 @@
     }
 
     try {
-      const res = await fetch('http://localhost:3000/api/submit-quiz', {
+      const res = await fetch('https://mental-health-companion-50nx.onrender.com/', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email: currentUser.email, responses })
